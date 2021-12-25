@@ -1,33 +1,21 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const cors = require('cors');
+const port = require('./config/ServerConfig');
+// const cors = require('./config/ServerConfig'); //how to transfer cors settings to config file???
 
-const urlencodedParser = express.urlencoded({extended: false});
+const timeCondition = require('./routes/timeTemperatureRoute');
+const dayCondition = require('./routes/dayConditionRoute');
+const currentCondition = require('./routes/currentConditionRoute');
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-})
 
-// Query params (ex: http://localhost:3000/user?id=2&name=Daniil)
-app.get('/user', (req, res) => {
-    let id = req.query.id;
-    let name = req.query.name;
-    res.send('Request get from user with id= ' + id + ' and name= ' + name);
-})
+app.use(cors({
+    origin: '*'
+}));
+app.use('/time', timeCondition);
+app.use('/day', dayCondition);
+app.use('/current', currentCondition);
 
-//Request Params (ex: http://localhost:3000/user/6/name/Daniil)
-app.get('/user/:userId/name/:userName', (req, res) => {
-    let userId = req.params['userId'];
-    let userName = req.params['userName'];
-    res.send(`User id: ${userId} User Name: ${userName}`)
-})
-
-// Processing request. Getting body from request (ex: Processing of form data)
-app.post('/', urlencodedParser ,(req, res) => {
-    console.log(req.body.userName);
-    res.send(`${req.body.userName} - ${req.body.userAge}`)
-})
-
-app.listen(port, () => {
-    console.log('Server listen 3000 port')
+app.listen(port.PORT, () => {
+    console.log(`Server listen port ${port.PORT}`)
 })

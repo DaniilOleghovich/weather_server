@@ -1,0 +1,25 @@
+{
+  "format": "CELSIUS",
+  "degree": [
+    {
+      "time": "08:00",
+      "celsiusDegree": 20,
+      "fahrenheitDegree": 68
+    },
+    {
+      "time": "09:00",
+      "celsiusDegree": 21,
+      "fahrenheitDegree": 70
+    },
+    {
+      "time": "10:00",
+      "celsiusDegree": 22,
+      "fahrenheitDegree": 72
+    },
+    {
+      "time": "11:00",
+      "celsiusDegree": 23,
+      "fahrenheitDegree": 74
+    }
+  ]
+}

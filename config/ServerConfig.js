@@ -1,1 +1,9 @@
-export const PORT = 3000;
+// const cors = require('cors');
+
+exports.PORT = 8080;
+//
+// cors({
+//     origin: '*'
+// })
+//
+// module.exports = cors;

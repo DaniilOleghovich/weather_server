@@ -1,0 +1,8 @@
+{
+  "weatherCondition": {
+    "chanceOfRain": "12%",
+    "humidity": "60%",
+    "windSpeed": "10 k/h",
+    "visibility": "100km",
+    "pressure": "1015 hPa"
+  }}
