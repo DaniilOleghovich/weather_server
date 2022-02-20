@@ -1,0 +1,62 @@
+{
+  "timeTemperature": {
+    "format": "CELSIUS",
+    "degree": [
+      {
+        "time": "08:00",
+        "celsiusDegree": 20,
+        "fahrenheitDegree": 68
+      },
+      {
+        "time": "09:00",
+        "celsiusDegree": 21,
+        "fahrenheitDegree": 70
+      },
+      {
+        "time": "10:00",
+        "celsiusDegree": 22,
+        "fahrenheitDegree": 72
+      },
+      {
+        "time": "11:00",
+        "celsiusDegree": 23,
+        "fahrenheitDegree": 74
+      }
+    ]
+  },
+  "currentCondition": {
+    "weatherCondition": {
+      "chanceOfRain": "12%",
+      "humidity": "60%",
+      "windSpeed": "10 k/h",
+      "visibility": "100km",
+      "pressure": "1015 hPa"
+    }
+  },
+  "dayCondition": {
+    "conditions": [
+      {
+        "id": 1,
+        "day": "Monday",
+        "condition": {
+          "chanceOfRain": "9%",
+          "humidity": "57%",
+          "wind": "10 k/h",
+          "celsiusDegree": 19,
+          "fahrenheitDegree": 45
+        }
+      },
+      {
+        "id": 2,
+        "day": "Tuesday",
+        "condition": {
+          "chanceOfRain": "9%",
+          "humidity": "57%",
+          "wind": "10 k/h",
+          "celsiusDegree": 19,
+          "fahrenheitDegree": 45
+        }
+      }
+    ]
+  }
+}
